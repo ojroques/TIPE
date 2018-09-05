@@ -1,11 +1,11 @@
-# TIPE 2016 - Étude et modélisation d’un système proie-prédateur par un automate cellulaire
+# TIPE 2016 - Étude et modélisation d’un système proie-prédateur
 
 ## Sommaire
 * [A propos de ce TIPE](#a-propos-de-ce-tipe)
     * [Installation](#installation)
     * [Screenshots](#screenshots)
 * [Introduction](#introduction)
-* [Plan d'étude](#plan-d-etude)
+* [Plan d'étude](#plan-détude)
 * [Conclusion](#conclusion)
 * [Bibliographie](#bibliographie)
 
@@ -17,11 +17,11 @@ Le programme de simulation se trouve dans `Programme/simulation.py` et nécessite
 
 ### Screenshots
 
-![apercu_programme](Source\ LaTeX/Dossier/apercu_programme.png)
+![Start](Screenshots/start.png)
 
-![simulation](Source\ LaTeX/Dossier/faible_proba.png)
+![Running](Screenshots/running.png)
 
-![graphe_config_stable](Source\ LaTeX/Dossier/graphe_config_stable.png)
+![Graphe](Screenshots/graphe.png)
 
 ## Introduction
 La dynamique des populations est une branche des mathématiques et de l’écologie qui s’intéresse aux variations de la population d’une espèce, en tenant compte de l’influence du milieu et des interactions inter-espèces. De nos jours, avec la prise de conscience collective de la fragilité des écosystèmes, ce domaine des sciences est devenu essentiel dans la lutte pour la préservation de la faune et de la flore.
