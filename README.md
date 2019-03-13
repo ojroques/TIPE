@@ -10,7 +10,7 @@
 * [Bibliographie](#bibliographie)
 
 ## A propos de ce TIPE
-J'ai présenté mon [TIPE](https://fr.wikipedia.org/wiki/Travail_d%27initiative_personnelle_encadr%C3%A9) en juin 2016 (avant la réforme de 2017). C'était l'un de mes premiers gros projet en Python. Pour la grille principale, j'ai repris une partie du code d'un Jeu de la Vie réalisé l'année d'avant. Avec du recul, le script Python est très mal écrit: surcommenté, une méga-classe englobant tout le programme, pas du tout optimisé et même très lent sur certaines machines... mais il fonctionne toujours et les résultats restent intéressants. C'est ce qui m'a poussé à créer ce dépôt public qui regroupe le programme de simulation, mon rapport et sa source LaTeX et les transparents de présentation. Vous trouverez dessous les pré-requis d'installation ainsi que le contenu de ma fiche synoptique de l'époque qui présente mon projet.
+J'ai présenté mon [TIPE](https://fr.wikipedia.org/wiki/Travail_d%27initiative_personnelle_encadr%C3%A9) en juin 2016 (avant la réforme de 2017). Le script Python est très mal écrit: surcommenté, une unique classe englobant tout le programme, pas du tout optimisé et même très lent sur certaines machines... mais il fonctionne toujours et les résultats restent intéressants. C'est ce qui m'a poussé à créer ce dépôt qui regroupe le programme de simulation, mon rapport et sa source LaTeX et les transparents de présentation. Vous trouverez dessous les pré-requis d'installation ainsi que le contenu de ma fiche synoptique de l'époque qui présente mon projet.
 
 ### Installation
 Le programme de simulation se trouve dans `Programme/simulation.py` et nécessite **Python 3+** avec les modules `tkinter`, `numpy`, `pickle` et `matplotlib` installés. Le script est encodé en **UTF-8**.
