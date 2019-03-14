@@ -571,7 +571,7 @@ class ProiePredateur(Frame):
             grid(row=0, column=0)
         Label(fen_credits, text="TIPE 2015-2016", font="Arial 13 bold").\
             grid(row=1, column=0)
-        Label(fen_credits, text="ojroques@gmail.com\n", font="Arial 13 bold").\
+        Label(fen_credits, text="github:ojroques\n", font="Arial 13 bold").\
             grid(row=2, column=0)
         Label(fen_credits, text="En mode répartition:", font="Arial 12 bold").\
             grid(row=3, column=0, sticky=W)
