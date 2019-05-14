@@ -1,5 +1,10 @@
-"""Étude et modélisation d'un système proie-prédateur par un automate cellulaire"""
-"""Olivier Roques - TIPE 2015-2016"""
+# coding=utf-8
+
+"""
+Étude et modélisation d'un système proie-prédateur par un automate cellulaire
+Author: Olivier Roques
+Date: 2015 - 2016
+"""
 
 from tkinter import *
 from random import randint, choice
@@ -19,13 +24,13 @@ class ProiePredateur(Frame):
         self.width       = 660                 #Largeur du canevas
         self.height      = 540                 #Hauteur du canevas
         self.xmax = self.width  // 12          #Nombre de case en largeur
-        self.ymax = self.height // 12          #Nombre de case en hauteur 
+        self.ymax = self.height // 12          #Nombre de case en hauteur
         #Vitesse par defaut de la simulation, en ms:
         self.vitesse     = 200
         self.coul_fond   = "#87D37C"           #Couleur du fond
         #Couleur des proies/prédateurs respectivement:
         self.coul_cel    = ["#EEEEEE", "#D35400"]
-        #Couleur des lignes de séparation  
+        #Couleur des lignes de séparation
         self.coul_lignes = "#68C3A3"
         self.coul_milieu = "#336E7B"           #Couleur des obstacles
         #Variable de contrôle: simulation active (=1) ou non:
@@ -141,7 +146,7 @@ class ProiePredateur(Frame):
         self.can.bind("<B2-Motion>", self.coord_mort)
         self.creer_obstacle()
 
-        #Bouton d'arrêt du programme 
+        #Bouton d'arrêt du programme
         Button(self, text="Quitter", command=self.master.destroy)\
                      .grid(row=1, column=1, padx=6, pady=2, sticky=E)
 
@@ -157,7 +162,7 @@ class ProiePredateur(Frame):
             self.can.bind("<B1-Motion>", self.coord_proie)
             self.can.bind("<B3-Motion>", self.coord_predat)
         #Si elle est cochée, le clic gauche fait apparaître une case obstacle:
-        else: 
+        else:
             self.can.unbind("<Button-3>")
             self.can.unbind("<B3-Motion>")
             self.can.bind("<Button-1>", self.coord_obstacle)
@@ -177,7 +182,7 @@ class ProiePredateur(Frame):
         #Initialisation des variables:
 
         self.generation = 0         #Compteur de génération
-        #Tableau contenant respectivement le nombre de proies et 
+        #Tableau contenant respectivement le nombre de proies et
         #le nombre de prédateurs actuel:
         self.pop = [0, 0]
 
@@ -352,7 +357,7 @@ class ProiePredateur(Frame):
             if faim >= self.predat_cfg[1]: self.tue_cellule(x, y, 2)
             elif v != ([], []):
                 reprod = self.grille_predat[x, y]
-                #Si il y a une proie à coté, et que le prédateur 
+                #Si il y a une proie à coté, et que le prédateur
                 #réussit à l'attraper, il prendra sa place:
                 if v[1] != [] and (randint(1, 100) <= self.chance_capture\
                     or v[0] == []):
