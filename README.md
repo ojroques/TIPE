@@ -1,7 +1,7 @@
-# TIPE 2016 - Étude et modélisation d’un système proie-prédateur
+# Étude et modélisation d’un système proie-prédateur
 
 ## Sommaire
-* [A propos de ce TIPE](#a-propos-de-ce-tipe)
+* [À propos](#a-propos)
     * [Installation](#installation)
     * [Screenshots](#screenshots)
 * [Introduction](#introduction)
@@ -9,7 +9,7 @@
 * [Conclusion](#conclusion)
 * [Bibliographie](#bibliographie)
 
-## A propos de ce TIPE
+## À propos
 J'ai présenté mon [TIPE](https://fr.wikipedia.org/wiki/Travail_d%27initiative_personnelle_encadr%C3%A9) en juin 2016. Le script Python est mal écrit et est parfois très lent mais il fonctionne toujours et les résultats restent intéressants.
 
 Ce dépôt regroupe le programme de simulation, mon rapport et les transparents de présentation. Vous trouverez dessous les pré-requis d'installation ainsi que ma fiche synoptique de l'époque qui présente le projet.
